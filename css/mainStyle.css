@@ -1,0 +1,52 @@
+body {
+  background: #555555;
+}
+
+.main-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-circle {
+  border: 40px solid orangered;
+  border-radius: 50%;
+  height: 500px;
+  width: 500px;
+  position: relative;
+}
+.main-circle .semicircle {
+  width: 400px;
+  height: 200px;
+  background-color: transparent;
+  border-radius: 200px 200px 0 0;
+  border: 20px solid red;
+  border-bottom: 0;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  position: absolute;
+}
+.main-circle .semicircle.bottom {
+  transform: rotate(325deg);
+  bottom: 72px;
+  right: 7px;
+}
+.main-circle .semicircle.top {
+  transform: rotate(140deg);
+  top: 70px;
+  bottom: 100px;
+}
+.main-circle .semicircle.right {
+  transform: rotate(234deg);
+  top: 105px;
+  right: -26px;
+}
+.main-circle .semicircle.left {
+  transform: rotate(53deg);
+  bottom: 100px;
+  left: -24px;
+}
+
+/*# sourceMappingURL=mainstyle.css.map */

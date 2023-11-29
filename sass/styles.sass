@@ -1,0 +1,59 @@
+$main-color: #555555
+$circle-border-color: orangered
+$semi-circle-border-color: red
+
+body
+  background: $main-color
+
+
+.main-page
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 100vh
+
+
+.main-circle
+  border: 40px solid $circle-border-color
+  border-radius: 50%
+  height: 500px
+  width: 500px
+  position: relative
+
+  .semicircle
+    width: 400px
+    height: 200px
+    background-color: transparent
+    border-radius: 200px 200px 0 0
+    border: 20px solid $semi-circle-border-color
+    border-bottom: 0
+    display: flex
+    justify-content: center
+    box-sizing: border-box
+    position: absolute
+
+    &.bottom
+      transform: rotate(325deg)
+      bottom: 72px
+      right: 7px
+
+
+    &.top
+      transform: rotate(140deg)
+      top: 70px
+      bottom: 100px
+
+
+    &.right
+      transform: rotate(234deg)
+      top: 105px
+      right: -26px
+
+
+    &.left
+      transform: rotate(53deg)
+      bottom: 100px
+      left: -24px
+
+
+
